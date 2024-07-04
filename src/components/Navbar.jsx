@@ -16,8 +16,6 @@ function Navbar() {
   }
   window.addEventListener("scroll", handleScroll)
 
-  const {id} = useParams()
-
   return (
     <div className={`navbar flex-s ${sticky && 'navbar__sticky'}`}>
 
@@ -25,7 +23,7 @@ function Navbar() {
 
       <div className="navbar__links flex-h gap">
         <Link to={'/categories'}><p className="link display-none">CATEGORIES</p></Link>
-        <Link to={`/categories/productpage/${id}`}><p className="link display-none">PRODUCT PAGE</p></Link>
+        <Link to='/categories/product/4'><p className="link display-none">PRODUCT PAGE</p></Link>
         <ShoppingCartOutlinedIcon className='icon' />
         <MenuIcon className='icon display-show' />
       </div>

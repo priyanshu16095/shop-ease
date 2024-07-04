@@ -2,8 +2,6 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Trending from '../components/Trending'
 import ProudProducts from '../components/ProudProducts'
-import Grid from '../components/Grid'
-import ProductPage from './ProductPage'
 
 function Home() {
   const banner1 = {
@@ -17,8 +15,7 @@ function Home() {
     desc: 'Our Products are all made to standard sizes so that you can mix and match them freely.'
   }
   return (
-    <div>
-      <ProductPage />
+    <div className='home flex-v'>
       <ProudProducts />
       <Banner details={banner1} reverse={false} />
       <Trending />

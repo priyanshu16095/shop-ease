@@ -7,10 +7,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './css/components.css'
 import './css/pages.css'
 import Footer from './components/Footer'
+import ProductsData from './data/ProductsData'
 
-function App() {
-
-  return (
+function App() {return (
     <div className='app'>
       <Router>
         <Navbar />
